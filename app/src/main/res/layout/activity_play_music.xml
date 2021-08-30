@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayMusicActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgPlayAlbum"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/song"/>
+
+    <TextView
+        android:id="@+id/txtPlayFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="18dp">
+        <ImageView
+            android:id="@+id/btnPlaySkipPrev"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/prev"
+            android:onClick="onClick"/>
+        <ImageView
+            android:id="@+id/btnPlay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pause"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:onClick="onClick"/>
+        <ImageView
+            android:id="@+id/btnPlaySkipNext"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/next"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txtPlayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  /  "
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/txtTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>
