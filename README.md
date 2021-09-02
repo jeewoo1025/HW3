@@ -2,7 +2,10 @@
 
 <b>멜론, 지니 같은 뮤직 플레이어 앱 클론 프로젝트 (Clone Proejct)</b> <br>
 MediaPlayer, ForegroundService를 사용하여 멀티미디어 기능 구현함
-<br>
+
+![멜론](https://user-images.githubusercontent.com/39071676/131787510-514dc072-bfdc-4c74-a916-e323896e583d.gif)
+
+<br><br>
 
 ## 실행화면 (MainActivity)
 ListView, MediaStore 클래스를 사용하면 화면, 기능 구현
